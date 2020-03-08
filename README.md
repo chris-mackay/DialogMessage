@@ -3,6 +3,17 @@ A simple text only version of the Windows TaskDialog
 
 ![Message](Message.png?raw=true "Message")
 
+### Supports three button configurations in an `enum`
+```csharp
+ // Message button enum for switch statement in ShowMessage
+// This will set the properties of the form buttons and their DialogResult
+public enum MsgButtons
+{
+    OK = 0,
+    OKCancel = 1,
+    YesNo = 2
+}
+```
 # Implementation
 
 ```csharp
