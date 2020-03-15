@@ -1,5 +1,5 @@
 # DialogMessage
-A simple text only version of the Windows TaskDialog
+A homemade messagebox for Windows
 
 ![Message](Message.png?raw=true "Message")
 
