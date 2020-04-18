@@ -1,8 +1,6 @@
+C:\Programming\DialogMessage\DialogMessage\bin\Debug\DialogMessage.dll.config
 C:\Programming\DialogMessage\DialogMessage\bin\Debug\DialogMessage.dll
 C:\Programming\DialogMessage\DialogMessage\bin\Debug\DialogMessage.pdb
-C:\Programming\DialogMessage\DialogMessage\obj\Debug\DialogMessage.csprojAssemblyReference.cache
-C:\Programming\DialogMessage\DialogMessage\obj\Debug\DialogMessage.Message.resources
-C:\Programming\DialogMessage\DialogMessage\obj\Debug\DialogMessage.csproj.GenerateResource.cache
 C:\Programming\DialogMessage\DialogMessage\obj\Debug\DialogMessage.csproj.CoreCompileInputs.cache
 C:\Programming\DialogMessage\DialogMessage\obj\Debug\DialogMessage.dll
 C:\Programming\DialogMessage\DialogMessage\obj\Debug\DialogMessage.pdb
