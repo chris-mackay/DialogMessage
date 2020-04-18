@@ -2,5 +2,6 @@ C:\Programming\DialogMessage\DialogMessage\bin\Release\DialogMessage.dll
 C:\Programming\DialogMessage\DialogMessage\bin\Release\DialogMessage.pdb
 C:\Programming\DialogMessage\DialogMessage\obj\Release\DialogMessage.Message.resources
 C:\Programming\DialogMessage\DialogMessage\obj\Release\DialogMessage.csproj.GenerateResource.cache
+C:\Programming\DialogMessage\DialogMessage\obj\Release\DialogMessage.csproj.CoreCompileInputs.cache
 C:\Programming\DialogMessage\DialogMessage\obj\Release\DialogMessage.dll
 C:\Programming\DialogMessage\DialogMessage\obj\Release\DialogMessage.pdb

@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlWhiteSpace = new System.Windows.Forms.Panel();
+            this.whiteSpace = new System.Windows.Forms.Panel();
             this.content = new System.Windows.Forms.Label();
             this.mainInstruction = new System.Windows.Forms.Label();
-            this.TableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tablePanelLayout = new System.Windows.Forms.TableLayoutPanel();
             this.Button1 = new System.Windows.Forms.Button();
             this.Button2 = new System.Windows.Forms.Button();
-            this.pnlWhiteSpace.SuspendLayout();
-            this.TableLayoutPanel1.SuspendLayout();
+            this.whiteSpace.SuspendLayout();
+            this.tablePanelLayout.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnlWhiteSpace
+            // whiteSpace
             // 
-            this.pnlWhiteSpace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.whiteSpace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlWhiteSpace.BackColor = System.Drawing.Color.White;
-            this.pnlWhiteSpace.Controls.Add(this.content);
-            this.pnlWhiteSpace.Controls.Add(this.mainInstruction);
-            this.pnlWhiteSpace.Location = new System.Drawing.Point(0, 0);
-            this.pnlWhiteSpace.Name = "pnlWhiteSpace";
-            this.pnlWhiteSpace.Size = new System.Drawing.Size(383, 79);
-            this.pnlWhiteSpace.TabIndex = 1;
+            this.whiteSpace.BackColor = System.Drawing.Color.White;
+            this.whiteSpace.Controls.Add(this.content);
+            this.whiteSpace.Controls.Add(this.mainInstruction);
+            this.whiteSpace.Location = new System.Drawing.Point(0, 0);
+            this.whiteSpace.Name = "whiteSpace";
+            this.whiteSpace.Size = new System.Drawing.Size(383, 79);
+            this.whiteSpace.TabIndex = 1;
             // 
             // content
             // 
@@ -75,20 +75,20 @@
             this.mainInstruction.TabIndex = 0;
             this.mainInstruction.Text = "Main Instruction";
             // 
-            // TableLayoutPanel1
+            // tablePanelLayout
             // 
-            this.TableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.TableLayoutPanel1.ColumnCount = 2;
-            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableLayoutPanel1.Controls.Add(this.Button1, 0, 0);
-            this.TableLayoutPanel1.Controls.Add(this.Button2, 1, 0);
-            this.TableLayoutPanel1.Location = new System.Drawing.Point(232, 83);
-            this.TableLayoutPanel1.Name = "TableLayoutPanel1";
-            this.TableLayoutPanel1.RowCount = 1;
-            this.TableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableLayoutPanel1.Size = new System.Drawing.Size(146, 29);
-            this.TableLayoutPanel1.TabIndex = 2;
+            this.tablePanelLayout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.tablePanelLayout.ColumnCount = 2;
+            this.tablePanelLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablePanelLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablePanelLayout.Controls.Add(this.Button1, 0, 0);
+            this.tablePanelLayout.Controls.Add(this.Button2, 1, 0);
+            this.tablePanelLayout.Location = new System.Drawing.Point(232, 83);
+            this.tablePanelLayout.Name = "tablePanelLayout";
+            this.tablePanelLayout.RowCount = 1;
+            this.tablePanelLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tablePanelLayout.Size = new System.Drawing.Size(146, 29);
+            this.tablePanelLayout.TabIndex = 2;
             // 
             // Button1
             // 
@@ -113,8 +113,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 118);
-            this.Controls.Add(this.TableLayoutPanel1);
-            this.Controls.Add(this.pnlWhiteSpace);
+            this.Controls.Add(this.tablePanelLayout);
+            this.Controls.Add(this.whiteSpace);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -125,19 +125,19 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Window Title";
             this.Load += new System.EventHandler(this.DialogMessage_Load);
-            this.pnlWhiteSpace.ResumeLayout(false);
-            this.pnlWhiteSpace.PerformLayout();
-            this.TableLayoutPanel1.ResumeLayout(false);
+            this.whiteSpace.ResumeLayout(false);
+            this.whiteSpace.PerformLayout();
+            this.tablePanelLayout.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        internal System.Windows.Forms.Panel pnlWhiteSpace;
+        internal System.Windows.Forms.Panel whiteSpace;
+        internal System.Windows.Forms.TableLayoutPanel tablePanelLayout;
         internal System.Windows.Forms.Label content;
         internal System.Windows.Forms.Label mainInstruction;
-        internal System.Windows.Forms.TableLayoutPanel TableLayoutPanel1;
         internal System.Windows.Forms.Button Button1;
         internal System.Windows.Forms.Button Button2;
     }
