@@ -5,7 +5,7 @@ namespace DialogMessage
     public static class DMessage
     {
         /// <summary>
-        /// A public method with a return value of System.Windows.Forms.DialogResult
+        /// A public static method with a return value of System.Windows.Forms.DialogResult
         /// </summary>
         /// <param name="_windowTitle"></param>
         /// <param name="_mainInstruction"></param>
@@ -13,11 +13,11 @@ namespace DialogMessage
         /// <param name="_content"></param> // Optional parameter with empty default value
         /// <returns></returns>
         public static DialogResult ShowMessage(string _windowTitle,
-                                        string _mainInstruction,
-                                        MsgButtons _msgButtons,
-                                        string _content = "")
+                                               string _mainInstruction,
+                                               MsgButtons _msgButtons,
+                                               string _content = "")
         {
-
+            // Creates a new instance of MainForm so we can set the properties of the controls
             MainForm main = new MainForm();
 
             // Sets the initial height of the form
@@ -43,7 +43,7 @@ namespace DialogMessage
                     main.Button1.Visible = false;
                     main.Button2.DialogResult = DialogResult.OK;
                     main.Button2.Text = "OK";
-                    main.AcceptButton = main.Button2; // The button that is clicked when the user presses the ENTER key. (OK)
+                    main.AcceptButton = main.Button2; 
                     main.Button2.TabIndex = 0;
                     main.ActiveControl = main.Button2;
 
@@ -55,7 +55,7 @@ namespace DialogMessage
                     main.Button2.DialogResult = DialogResult.Cancel;
                     main.Button1.Text = "OK";
                     main.Button2.Text = "Cancel";
-                    main.AcceptButton = main.Button2; // The button that is clicked when the user presses the ENTER key. (Cancel)
+                    main.AcceptButton = main.Button2; 
                     main.Button1.TabIndex = 1;
                     main.Button2.TabIndex = 0;
                     main.ActiveControl = main.Button2;
@@ -68,7 +68,7 @@ namespace DialogMessage
                     main.Button2.DialogResult = DialogResult.No;
                     main.Button1.Text = "Yes";
                     main.Button2.Text = "No";
-                    main.AcceptButton = main.Button2; // The button that is clicked when the user presses the ENTER key. (No)
+                    main.AcceptButton = main.Button2; 
                     main.Button1.TabIndex = 1;
                     main.Button2.TabIndex = 0;
                     main.ActiveControl = main.Button2;
