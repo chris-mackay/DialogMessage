@@ -17,9 +17,9 @@ public enum MsgButtons
 # Implementation
 
 ```csharp
-DialogMessage.Message message = new DialogMessage.Message();
+using DialogMessage;
 
-if (message.ShowMessage(
+if (DMessage.ShowMessage(
 
     // Window Title
     "Window Title",
@@ -30,7 +30,7 @@ if (message.ShowMessage(
     "This is another line\n",
 
     // Dialog buttons
-    DialogMessage.Message.MsgButtons.YesNo,
+    DMessage.MsgButtons.YesNo,
 
     // Content
     "This is the content\n" +
@@ -38,10 +38,12 @@ if (message.ShowMessage(
     "This is another line\n")
 
     // Checks DialogResult of the button clicked by user
-    == DialogResult.Yes) 
+    == DialogResult.Yes)
 
     // Show the Windows standard MessageBox to test result
     MessageBox.Show("You clicked Yes!");
+
 else
+
     MessageBox.Show("You clicked No!");
 ```
