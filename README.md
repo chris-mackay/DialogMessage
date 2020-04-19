@@ -3,7 +3,7 @@ A homemade messagebox for Windows
 
 ![Message](Message.png?raw=true "Message")
 
-### Read the accompanying article on CodeProject <a href="https://www.codeproject.com/Articles/5264875/Dialog-Message-in-Csharp-for-NET-Framework-4-5">here</a>
+### Read the accompanying article on CodeProject <a href="https://www.codeproject.com/Articles/5264875/Dialog-Message-in-Csharp-for-NET-Framework-4-5" target="_blank">here</a>
 
 # Implementation
 
