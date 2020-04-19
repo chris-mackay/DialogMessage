@@ -5,6 +5,8 @@ A homemade messagebox for Windows
 
 ### Read the accompanying article on CodeProject <a href="https://www.codeproject.com/Articles/5264875/Dialog-Message-in-Csharp-for-NET-Framework-4-5" target="_blank">here</a>
 
+<p>This repository may be ahead of the CodeProject article due to new features and revisions</p>
+
 # Implementation
 
 ```csharp
