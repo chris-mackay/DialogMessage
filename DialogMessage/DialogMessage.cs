@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using System.Drawing;
 
 namespace DialogMessage
 {
@@ -10,11 +11,13 @@ namespace DialogMessage
         /// <param name="_windowTitle"></param>
         /// <param name="_mainInstruction"></param>
         /// <param name="_msgButtons"></param>
-        /// <param name="_content"></param> // Optional parameter with empty default value
+        /// <param name="_msgIcons"></param> // Optional parameter with default value of None
+        /// <param name="_content"></param> // Optional parameter with default value of Empty
         /// <returns></returns>
         public static DialogResult ShowMessage(string _windowTitle,
                                                string _mainInstruction,
                                                MsgButtons _msgButtons,
+                                               MsgIcons _msgIcons = MsgIcons.None,
                                                string _content = "")
         {
             // Creates a new instance of MainForm so we can set the properties of the controls
@@ -79,8 +82,61 @@ namespace DialogMessage
                     break;
             }
 
+            // Sets the Image for the PictureBox based on which enum was provided
+            if (_msgIcons != MsgIcons.None)
+            {
+                main.msgIcon.Visible = true;
+
+                switch (_msgIcons)
+                {
+                    case MsgIcons.Question:
+
+                        main.msgIcon.Image = SystemIcons.Question.ToBitmap();
+                        break;
+
+                    case MsgIcons.Info:
+
+                        main.msgIcon.Image = SystemIcons.Information.ToBitmap();
+                        break;
+
+                    case MsgIcons.Warning:
+
+                        main.msgIcon.Image = SystemIcons.Warning.ToBitmap();
+                        break;
+
+                    case MsgIcons.Error:
+
+                        main.msgIcon.Image = SystemIcons.Error.ToBitmap();
+                        break;
+
+                    case MsgIcons.Shield:
+
+                        main.msgIcon.Image = SystemIcons.Shield.ToBitmap();
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                main.msgIcon.Visible = false;
+            }
+
             // Shows the message and gets the result selected by the user
             return main.ShowDialog();
+        }
+
+        // Message icon enum for switch statement in ShowMessage
+        // This will set the Image for the PictureBox
+        public enum MsgIcons
+        {
+            None = 0,
+            Question = 1,
+            Info = 2,
+            Warning = 3,
+            Error = 4,
+            Shield = 5
         }
 
         // Message button enum for switch statement in ShowMessage

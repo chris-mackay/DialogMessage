@@ -16,6 +16,19 @@ namespace DialogMessage
             // Once the ShowMessage function is called and the form appears
             // the code below makes the appropriate adjustments so the text appears properly
 
+            // If no icon will be shown then shift the MainInstruction and Content 
+            // left to an appropriate location
+
+            // Adjust the MaximumSize to compensate for the shift left.
+            if (msgIcon.Visible == false)
+            {
+                mainInstruction.Location = new Point(12, mainInstruction.Location.Y);
+                mainInstruction.MaximumSize = new Size(353, 0);
+
+                content.Location = new Point(12, content.Location.Y);
+                content.MaximumSize = new Size(353, 0);
+            }
+
             // Gets the Y location of the bottom of MainInstruction
             int mainInstructionBottom = mainInstruction.Location.Y + mainInstruction.Height;
 

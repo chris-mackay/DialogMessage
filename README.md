@@ -3,17 +3,8 @@ A homemade messagebox for Windows
 
 ![Message](Message.png?raw=true "Message")
 
-### Supports three button configurations in an `enum`
-```csharp
-// Message button enum for switch statement in ShowMessage
-// This will set the properties of the form buttons and their DialogResult
-public enum MsgButtons
-{
-    OK = 0,
-    OKCancel = 1,
-    YesNo = 2
-}
-```
+### Read the accompanying article on CodeProject <a href="https://www.codeproject.com/Articles/5264875/Dialog-Message-in-Csharp-for-NET-Framework-4-5">here</a>
+
 # Implementation
 
 ```csharp
@@ -25,17 +16,17 @@ if (DMessage.ShowMessage(
     "Window Title",
 
     // Main Instruction
-    "This is the Main Instruction\n" +
-    "This is another line\n" +
-    "This is another line\n",
+    "Want to learn how to write your own message box?",
 
     // Dialog buttons
     DMessage.MsgButtons.YesNo,
 
+    // Dialog Icons
+    DMessage.MsgIcons.Question,
+
     // Content
-    "This is the content\n" +
-    "This is another line\n" +
-    "This is another line\n")
+    "In this project we will learn the logic necessary " +
+    "to write your own dialog message box in Windows")
 
     // Checks DialogResult of the button clicked by user
     == DialogResult.Yes)
@@ -46,4 +37,30 @@ if (DMessage.ShowMessage(
 else
 
     MessageBox.Show("You clicked No!");
+```
+
+### Supports six image configurations in an `enum`
+```csharp
+// Message icon enum for switch statement in ShowMessage
+// This will set the Image for the PictureBox
+public enum MsgIcons
+{
+    None = 0,
+    Question = 1,
+    Info = 2,
+    Warning = 3,
+    Error = 4,
+    Shield = 5
+}
+```
+### Supports three button configurations in an `enum`
+```csharp
+// Message button enum for switch statement in ShowMessage
+// This will set the properties of the form buttons and their DialogResult
+public enum MsgButtons
+{
+    OK = 0,
+    OKCancel = 1,
+    YesNo = 2
+}
 ```
