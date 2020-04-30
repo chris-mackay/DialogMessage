@@ -1,9 +1,9 @@
-﻿using System;
-using System.Windows.Forms;
-using System.Drawing;
-
-namespace DialogMessage
+﻿namespace DialogMessage
 {
+    using System;
+    using System.Windows.Forms;
+    using System.Drawing;
+
     public partial class MainForm : Form
     {
         public MainForm()
@@ -32,8 +32,8 @@ namespace DialogMessage
             // Gets the Y location of the bottom of MainInstruction
             int mainInstructionBottom = mainInstruction.Location.Y + mainInstruction.Height;
 
-            // Gets the Y location of the bottom of Content
-            int contentBottom = content.Location.Y + content.Height;
+            // Gets the Y location of the bottom of Content (unused)
+            //int contentBottom = content.Location.Y + content.Height;
 
             // Offsets the top of Content from the bottom of MainInstruction
             int contentTop = mainInstructionBottom + 18; // 18 just looked nice to me
@@ -41,8 +41,7 @@ namespace DialogMessage
             // Sets new location of the top of Content
             content.Location = new Point(content.Location.X, contentTop);
 
-            if (content.Text == string.Empty)
-
+            if (string.IsNullOrEmpty(content.Text))
                 // If only MainInstruction is provided then make the form a little shorter
                 Height += (mainInstruction.Location.Y + mainInstruction.Height) - 50;
             else
