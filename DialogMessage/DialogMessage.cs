@@ -1,8 +1,8 @@
-﻿using System.Windows.Forms;
-using System.Drawing;
-
-namespace DialogMessage
+﻿namespace DialogMessage
 {
+    using System.Windows.Forms;
+    using System.Drawing;
+
     public static class DMessage
     {
         /// <summary>
